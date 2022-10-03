@@ -8,7 +8,7 @@ Created with HTML,CSS and javascript.
 
 
 ##Try it!
-(https://danilorua.github.io/calculator/)
+https://danilorua.github.io/calculator/
 
 
 
