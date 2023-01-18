@@ -1,47 +1,66 @@
 .calculator-frame {
-    width: 100%;
-    margin: 2% 2%;
-    padding: 2% 2%;
-    position: center;
-    width: fit-content;
-    height: fit-content;
-    border-radius: 10px;
-    box-sizing: border-box;
-    border: 3px solid rgb(177, 16, 166);
-    box-shadow: 10px 10px 15px 1px rgba(181, 76, 230, 0.87);
-
-}
-
-table {
-    border: 1px solid rgb(251, 148, 243);
-    margin-left: auto;
-    margin-right: auto;
+  width: 100%;
+  margin: 2%;
+  padding: 2%;
+  width: fit-content;
+  border-radius: 10px;
+  box-sizing: border-box;
+  border: 3px solid rgb(177, 16, 166);
+  box-shadow: 10px 10px 15px 1px rgba(181, 76, 230, 0.87);
 }
 
 input[type="button"] {
-
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
-    width: 100%;
-    padding: 20px 40px;
-    border: none;
-    border-radius: 5px;
-
-    background-color: rgba(255, 0, 217, 0.151);
-    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
-
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  width: 100%;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgba(255, 0, 217, 0.151);
+  transition: cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 input[type="text"] {
-    font-size: large;
-    padding: 1em;
-    margin: 0%;
-    width: 250px;
-
+  font-size: large;
+  padding: 1em;
+  margin: 0%;
+  width: 250px;
+  border: 3px solid rgb(177, 16, 166);
+  border-radius: 5px;
 }
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .calculator-frame {
+    width: 100%;
+    height: fit-content;
+
+    border-radius: 10px;
+    border: 3px solid rgb(177, 16, 166);
+    box-shadow: 10px 10px 15px 1px rgba(181, 76, 230, 0.87);
+  }
+
+  .table {
+    width: 100%;
+  }
+  input[type="button"] {
+    color: rgb(113, 9, 106);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 0, 217, 0.151);
+    transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  input[type="text"] {
+    font-size: large;
+    margin: 0%;
+    width: 16rem;
+    height: 1.5em;
+  }
 }
