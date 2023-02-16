@@ -11,6 +11,7 @@ clearButton.addEventListener('click', clear)
 
 function display(value) {
     document.getElementById("result").value += value;
+    navigator.vibrate(100)
 }
 
 
@@ -23,3 +24,5 @@ let c = document.getElementById('result').value;
 let r = eval(c);
 document.getElementById('result').value = r;
 }
+
+
